@@ -7,8 +7,6 @@
 * 单元测试：Google Test
 * 性能测试：Google Benchmark
 
-**Tips:**
-1. google benchmark编译过程中，如果遇到关于gtest缺失的报错，可以在google benchmark的cmake中关闭gtest选项
 
 ## 如何运行Yolov5的推理
 
