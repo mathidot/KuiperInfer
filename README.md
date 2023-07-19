@@ -7,35 +7,6 @@
 * 单元测试：Google Test
 * 性能测试：Google Benchmark
 
-## 安装过程(使用Docker)
-1. docker pull registry.cn-hangzhou.aliyuncs.com/hellofss/kuiperinfer:latest
-2. sudo docker run -t -i registry.cn-hangzhou.aliyuncs.com/hellofss/kuiperinfer:latest /bin/bash
-3. cd code 
-4. git clone --recursive https://github.com/zjhellofss/KuiperInfer.git 
-5. cd KuiperInfer
-6. **git checkout -b 你的新分支 study_version_0.02 (如果想抄本项目的代码，请使用这一步切换到study tag)**
-7. mkdir build 
-8. cd build 
-9. cmake -DCMAKE_BUILD_TYPE=Release -DDEVELOPMENT=OFF .. 
-10. make -j16
-
-**Tips:**
-
-1. **如果需要对KuiperInfer进行开发**，请使用 git clone  --recursive https://github.com/zjhellofss/KuiperInfer.git 同时下载子文件夹tmp, 并在cmake文件中设置`$DEVELOPMENT`或者指定`-DDEVELOPMENT=ON`
-2. **如果国内网速卡顿**，请使用 git clone https://gitee.com/fssssss/KuiperInferGitee.git 
-3. **如果想获得更快地运行体验**，请在本机重新编译openblas或apt install intel-mkl
-
-##  安装过程(不使用docker)
-1. git clone --recursive https://github.com/zjhellofss/KuiperInfer.git
-2. **git checkout -b 你的新分支 study_version_0.01 (如果想抄本项目的代码，请使用这一步切换到study tag)**
-3. 安装必要环境(openblas推荐编译安装，可以获得更快的运行速度，或者使用apt install intel-mkl替代openblas)
-```shell
- apt install cmake, openblas-devel, lapack-devel, arpack-devel, SuperLU-devel
-```
-4. 下载并编译armadillo https://arma.sourceforge.net/download.html
-5. 编译安装glog\google test\google benchmark
-6. 余下步骤和上述一致
-
 **Tips:**
 1. google benchmark编译过程中，如果遇到关于gtest缺失的报错，可以在google benchmark的cmake中关闭gtest选项
 
