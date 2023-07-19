@@ -109,13 +109,3 @@ gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 | 640×640 batch = 8      | Yolov5nano       | CPU(armadillo + openblas) | 78.37ms / image  |
 | **640×640** batch = 8  | **Yolov5s**      | CPU(armadillo + openblas) | 177.54ms / image |
 | **640×640** batch = 16 | **Yolov5s**      | CPU(armadillo + openblas) | 134.57ms / image |
-
-## 致谢
-
-推理框架NCNN，已经在借鉴的代码中保留了NCNN的BSD协议 https://github.com/Tencent/ncnn
-
-优秀的数学库Openblas: https://github.com/xianyi/OpenBLAS
-
-优秀的数学库Armadillo: https://arma.sourceforge.net/docs.html
-
-给予我灵感的Caffe框架: https://github.com/BVLC/caffe
